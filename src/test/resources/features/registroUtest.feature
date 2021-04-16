@@ -8,8 +8,8 @@
     Scenario Outline: Register in Utest
       Given than Mateo wants to enter the page
       When He enters his datas
-      |strName  |strLastName  |strEmail  |strMonth  |strDay  |strYear  |strMobileDevice  |strModel  |strOS  |strPassword  |
-      |<strName>|<strLastName>|<strEmail>|<strMonth>|<strDay>|<strYear>|<strMobileDevice>|<strModel>|<strOS>|<strPassword>|
+      |strName  |strLastName  |strEmail  |strMobileDevice  |strModel  |strOS  |strPassword  |strConfirmPassword|
+      |<strName>|<strLastName>|<strEmail>|<strMobileDevice>|<strModel>|<strOS>|<strPassword>| <strConfirmPassword>  |
 
 
       Then He finds the message
@@ -18,6 +18,6 @@
 
       Examples:
 
-        |strName    |strLastName  |strEmail             |strMonth|strDay|strYear|strMobileDevice|strModel|strOS |strPassword|
-        |  juan     |   Lopez     |juhanlopez@hotmail.com|January|1      |2000   | Apple         |iPhone 4|iOS 14|123456Mm1234|
+        |strName    |strLastName  |strEmail             |strMobileDevice|strModel|strOS |strPassword|strConfirmPassword|
+        |  juan     |   Lopez     |juhanlopez@hotmail.com| Apple         |iPhone 4|iOS 14|123456Mm1234|  123456Mm1234  |
 
