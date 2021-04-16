@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class UtestRegistroPage {
 
-    public static final Target REGISTER_BUTTON= Target.the("boton para registrarse").located(By.xpath("//a[text()='Join Today']"));
+    public static final Target REGISTER_BUTTON= Target.the("boton para registrarse").located(By.xpath("//head//following::a[text()='Join Today'][1]"));
     public static final Target INPUT_NAME= Target.the("input nombre").located(By.id("firstName"));
     public static final Target INPUT_LASTNAME= Target.the("input apellido").located(By.id("lastName"));
     public static final Target INPUT_EMAIL= Target.the("input email").located(By.id("email"));

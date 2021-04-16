@@ -36,7 +36,14 @@ public class Register implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor){
+        try {
+            Thread.sleep(5000);
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         actor.attemptsTo(Click.on(UtestRegistroPage.REGISTER_BUTTON),
+
                 Enter.theValue(strName).into(UtestRegistroPage.INPUT_NAME),
                 Enter.theValue(strLastName).into(UtestRegistroPage.INPUT_LASTNAME),
                 Enter.theValue(strEmail).into(UtestRegistroPage.INPUT_EMAIL),
@@ -44,6 +51,7 @@ public class Register implements Task {
                 SelectFromOptions.byVisibleText("1").from(UtestRegistroPage.SELECT_DAY),
                 SelectFromOptions.byVisibleText("1991").from(UtestRegistroPage.SELECT_YEAR),
                 Click.on(UtestRegistroPage.BUTTON_NEXT_LOCATION),
+
                 Click.on(UtestRegistroPage.BUTTON_NEXT_DEVICES),
                 Click.on(UtestRegistroPage.CLICK_MOBILE),
 
@@ -72,6 +80,8 @@ public class Register implements Task {
                 Click.on(UtestRegistroPage.SPAN_CHECKMARK1),
                 Click.on(UtestRegistroPage.SPAN_CHECKMARK2),
                 Click.on(UtestRegistroPage.BUTTON_COMPLETESETUP));
+
+
     }
 
     private String strDay;
