@@ -29,6 +29,10 @@ public class UtestRegistroPage {
     public static final Target BUTTON_NEXT_DEVICES= Target.the("boton next devices").located(By.xpath("//span[text()='Next: Devices']"));
     public static final Target BUTTON_LASTSTEP= Target.the("boton last step").located(By.xpath("//span[text()='Next: Last Step']"));
     public static final Target BUTTON_COMPLETESETUP= Target.the("boton complete setup").located(By.xpath("//span[text()='Complete Setup']"));
+    public static final Target INPUT_CITY= Target.the("input city").located(By.xpath("//input[@id='city']"));
+    public static final Target INPUT_ZIP= Target.the("input zip").located(By.xpath("//input[@id='zip']"));
+    public static final Target INPUT_COUNTRY= Target.the("input country").located(By.xpath("//span[@class='ui-select-match-text pull-left']"));
+
 
 
 

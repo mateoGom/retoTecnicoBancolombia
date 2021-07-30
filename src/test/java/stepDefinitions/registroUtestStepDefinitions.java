@@ -35,12 +35,5 @@ public class registroUtestStepDefinitions {
                 registroUtestData.get(0).getStrPassword(),registroUtestData.get(0).getStrConfirmPassword()));
     }
 
-    @Then("^He finds the message$")
-    public void heFindsTheMessage(DataTable arg1) throws Exception {
-        // Write code here that turns the phrase above into concrete actions
-        // For automatic transformation, change DataTable to one of
-        // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
-        // E,K,V must be a scalar (String, Integer, Date, enum etc)
-        throw new PendingException();
-    }
+
 }
